@@ -8,7 +8,7 @@ const upload = async(file) =>{
     const date =new Date()
     const storageRef = ref(storage, `images/${date + file.name}`);
 
-const uploadTask = uploadBytesResumable(storageRef, file);
+    const uploadTask = uploadBytesResumable(storageRef, file);
 
 return new Promise((resolve,reject)=>{
 
@@ -19,7 +19,7 @@ uploadTask.on('state_changed',
     
   }, 
   (error) => {
-    reject("Something went wrong!" + error.code)
+    reject("Something went wrong!" + error.code);
   }, 
   () => {
     getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
@@ -29,3 +29,5 @@ uploadTask.on('state_changed',
 );
 });
 }
+
+export default upload
