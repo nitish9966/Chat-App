@@ -16,10 +16,11 @@ body{
   justify-content: center;
   height: 100vh;
   color: white;
+  overflow: hidden;
 }
 .container{
   width: 80vw;
-  height: 90vh;
+  height: 80vh;
   background-color: hsla(186, 25%, 40%, 0.57);
   border-radius: 12px;
   backdrop-filter: blur(10px) saturate(100%);

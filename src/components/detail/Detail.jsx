@@ -25,7 +25,7 @@ const Detail=()=>{
             <div className="user">
                 <img src={user?.avatar || "/avatar.png"} alt="" />
                 <h2>{user?.username}</h2>
-                <p>Lorem ipsum dolor sit amet </p>
+                <p>About {user?.username} </p>
             </div>
             <div className="info">
                 <div className="option">
@@ -53,13 +53,13 @@ const Detail=()=>{
                             </div>
                             <img src="/download.png" alt="" className='icon'/>
                         </div>
-                        <div className="photoItem">
+                        {/* <div className="photoItem">
                             <div className="photoDetail">
                                 <img src="https://i.pinimg.com/originals/1a/b0/89/1ab089aaf438547bc56b14d3e597807d.jpg" alt="" />
                                 <span>photo_2024_2.png</span>
                             </div>
                             <img src="/download.png" alt="" className='icon'/>
-                        </div>
+                        </div> */}
                         {/* <div className="photoItem">
                             <div className="photoDetail">
                                 <img src="https://i.pinimg.com/originals/1a/b0/89/1ab089aaf438547bc56b14d3e597807d.jpg" alt="" />
